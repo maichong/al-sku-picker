@@ -1,0 +1,25 @@
+<view class="al-sku-picker">
+  <block wx:for="{{skus}}">
+    <view>{{item.title}}</view>
+    <view>
+      <block wx:for="{{item.values}}" wx:for-item="_item">
+        <block wx:if="{{_item.hasInventory === true}}">
+          <block wx:if="{{_item.isSelected === true}}">
+            <text class="al-sku-picker-item al-sku-picker-item-action" bindtap="handleSelectSku"
+                  data-id="{{_item.id}}" data-prop="{{item.id}}">{{_item.label}}
+            </text>
+          </block>
+          <block wx:else>
+            <text class="al-sku-picker-item" bindtap="handleSelectSku"
+                  data-id="{{_item.id}}" data-prop="{{item.id}}">{{_item.label}}
+            </text>
+          </block>
+        </block>
+        <block wx:else>
+          <text class="al-sku-picker-item al-sku-picker-item-nothing">{{_item.label}}
+          </text>
+        </block>
+      </block>
+    </view>
+  </block>
+</view>

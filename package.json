@@ -1,0 +1,24 @@
+{
+  "name": "al-sku-picker",
+  "version": "0.1.0",
+  "description": "AL sku picker",
+  "keywords": [
+    "alaska",
+    "labrador"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maichong/al-sku-picker.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maichong/al-sku-picker/issues"
+  },
+  "homepage": "https://github.com/maichong/al-sku-picker#readme",
+  "author": {
+    "email": "lulu@maichong.it",
+    "name": "lulu",
+    "url": "https://github.com/lulu-maichong"
+  }
+}
