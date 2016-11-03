@@ -22,30 +22,9 @@ export default class SkuPicker extends wx.Component {
     price: '',
     skus: [],
     keys: [],
-    skuId: ''
+    skuId: '',
+    data:{}
   };
-
-  children = {};
-
-  onLoad() {
-
-  }
-
-  onReady() {
-
-  }
-
-  onShow() {
-
-  }
-
-  onHide() {
-
-  }
-
-  onUnload() {
-
-  }
 
   onUpdate(props) {
     if (props.skuId) {
